@@ -12,9 +12,9 @@ import lombok.NoArgsConstructor;
 @Builder
 public class TopicDto {
     private Long id;
-    @NotBlank(message = "Community name is required")
+    @NotBlank
     private String name;
-    @NotBlank(message = "Description is required")
+    @NotBlank
     private String description;
     private Integer numberOfPosts;
 }

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/topic")
+@RequestMapping("/api/topic/")
 @AllArgsConstructor
 @Slf4j
 public class TopicController {

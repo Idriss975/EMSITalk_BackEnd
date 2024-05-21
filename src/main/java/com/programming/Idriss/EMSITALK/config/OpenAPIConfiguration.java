@@ -14,8 +14,8 @@ public class OpenAPIConfiguration {
     @Bean
     public OpenAPI expenseAPI() {
         return new OpenAPI()
-                .info(new Info().title("HAMAMA API")
-                        .description("API for HAMAMA platform")
+                .info(new Info().title("EMSITalk API")
+                        .description("API for EMSITalk platform")
                         .license(new License().name("4-Clause BSD"))
                 );
     }

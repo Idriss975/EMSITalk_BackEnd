@@ -12,11 +12,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class RegisterRequest {
     @Email
-    @NotEmpty(message = "Email is required")
+    @NotEmpty
     private String email;
-    @NotBlank(message = "Username is required")
+    @NotBlank
     private String username;
-    @NotBlank(message = "Password is required")
+    @NotBlank
     private String password;
 
 }

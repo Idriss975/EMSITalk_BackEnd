@@ -51,11 +51,13 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/api/auth/**")
                         .permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/feed/")
-                        .permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/posts/")
                         .permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/posts/**")
+                        .permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/topic/")
+                        .permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/comments/")
                         .permitAll()
                         .requestMatchers("/v3/api-docs",
                                 "/configuration/ui",
